@@ -1,0 +1,159 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f2f2f2;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#planner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.time-block {
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 0.5rem;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-block span {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px 4px 0 0;
+}
+
+textarea {
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 0;
+  height: 80px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.save-btn,
+.delete-btn {
+  flex: 1;
+  margin: 0 2px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* color coding  */
+.past span,
+.past textarea {
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+.present span,
+.present textarea {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future span,
+.future textarea {
+  background-color: #77dd77;
+  color: #333;
+}
+
+/* dark mode  */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .time-block {
+  box-shadow: 0 0 5px #444;
+}
+
+/* dark mode time  */
+body.dark .past span,
+body.dark .past textarea {
+  background-color: #555;
+  color: #ccc;
+}
+
+body.dark .present span,
+body.dark .present textarea {
+  background-color: #c94f4f;
+  color: white;
+}
+
+body.dark .future span,
+body.dark .future textarea {
+  background-color: #4caf50;
+  color: white;
+}
+
+.quote {
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+body.dark .quote {
+  color: #aaa;
+}
+
+.date-picker {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.date-picker input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dragging {
+  opacity: 0.5;
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
