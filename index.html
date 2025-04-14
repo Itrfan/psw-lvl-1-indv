@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Daily Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="date-picker">
+      <label for="selectedDate">📅 Select Date:</label>
+      <input type="date" id="selectedDate" />
+    </div>
+    <header>
+      <h1>🗓️ My Daily Planner</h1>
+      <div class="header-buttons">
+        <button id="darkModeToggle">🌓 Toggle Dark Mode</button>
+        <button id="clearAll">🧹 Clear All</button>
+      </div>
+    </header>
+
+    <div id="quote" class="quote">Loading quote...</div>
+
+    <main id="planner"></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
